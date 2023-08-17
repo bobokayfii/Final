@@ -1,4 +1,3 @@
-
 *{
   padding: 0;
   margin: 0;
@@ -7,4 +6,23 @@
 .container{
   max-width: 1250px;
   margin: 0 auto;
+}
+
+.ant-layout-sider {
+  height: 100vh;
+}
+
+.ant-layout-content {
+  margin: 0 !important;
+  margin-top: 80px !important;
+  height: calc(100vh - 64px) ;
+  overflow: scroll;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.category-image .ant-upload-select {
+  width: 100% !important;
 }

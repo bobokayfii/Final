@@ -82,9 +82,9 @@ const HomeP = () => {
       <div className="homePa">
         <div className="text container">
           <p className="p1">
-            Posted on <strong>{category.name}</strong>
+            Posted on <strong>{category?.name}</strong>
           </p>
-          <h1 className="hh1">{category.description}</h1>
+          <h1 className="hh1">{category?.description}</h1>
           <p className="p2">
             By <span className="james">{user.first_name} {user.last_name}</span> | May 23, 2022{" "}
           </p>

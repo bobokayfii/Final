@@ -20,6 +20,7 @@ import CategoriesP from "./pages/admin/CategoriesP";
 
 import { AuthContext } from "./context/AuthContext";
 import Category from "./pages/user/Category";
+import AdminAccounP from "./pages/admin/AdminAccounP";
 
 function App() {
   let { isAuthenticated,role } = useContext(AuthContext);
@@ -48,6 +49,7 @@ function App() {
               <Route path="users" element={<UsersP />} />
               <Route path="categories" element={<CategoriesP />} />
               <Route path="all-posts" element={<AllPosts />} />
+              <Route path="admin-account" element={<AdminAccounP/>}/>
             </Route>
           </Fragment>
         )}

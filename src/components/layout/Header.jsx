@@ -13,7 +13,7 @@ const Header = () => {
         MiniSidebar.classList.toggle("active")
       }
     }
-    let { setRole, setIsAuthenticated,isAuthenticated } = useContext(AuthContext);
+    let { setRole, setIsAuthenticated,isAuthenticated ,role} = useContext(AuthContext);
     let navigate=useNavigate()
     function logout(){
       console.log(1);
@@ -29,15 +29,16 @@ const Header = () => {
     <header>
       <div className="Header_flex container">
         <div className="Logo">
-          {isAuthenticated ? (
+          {isAuthenticated && role === "user" && (
             <NavLink to="/my-posts" className="finsweet">
               My Blogs
             </NavLink>
-          ) : (
-            <NavLink to="/" className="finsweet">
-              Finsweet
-            </NavLink>
           )}
+          : (
+          <NavLink to="/" className="finsweet">
+            Finsweet
+          </NavLink>
+          )
         </div>
         <div className="Right_Link">
           <NavLink to="/" className="lnk">

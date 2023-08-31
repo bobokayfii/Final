@@ -18,7 +18,11 @@
   height: calc(100vh - 64px) ;
   overflow: scroll;
 }
-
+.ant-layout .ant-layout-sider-children {
+    height: 100%;
+    margin-top: -0.1px;
+    padding-top: 70px;
+}
 a{
   text-decoration: none !important;
 }

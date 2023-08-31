@@ -46,6 +46,7 @@ const AdminLayout = () => {
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="demo-logo-vertical">Logo</div>
         <Menu
+        style={{padddingTop:"100px"}}
           theme="dark"
           mode="inline"
           selectedKeys={[key]}
